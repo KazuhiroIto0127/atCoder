@@ -1,0 +1,10 @@
+version: "3.8"
+services:
+  ruby:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: atCoder-ruby
+    tty: true
+    volumes:
+      - ./:/app
